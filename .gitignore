@@ -1,0 +1,13 @@
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
