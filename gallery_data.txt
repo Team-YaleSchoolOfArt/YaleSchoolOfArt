@@ -1,0 +1,5 @@
+image1.jpg, Created By: Katsushika Hokusai
+image2.jpg, Created By: Piet Mondrian
+image3.jpg, Created By: Van Gogh
+image4.jpg, Created By: Jacques-Louis David
+image5.jpg, Created By: Stepanova
