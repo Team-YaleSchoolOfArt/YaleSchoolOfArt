@@ -56,19 +56,25 @@ public class HomePage {
         Font galleryFont = Font.font("Bauhaus 93", FontWeight.BOLD, 60);
         Font footnoteFont = Font.font("Palatino Linotype", FontWeight.BOLD, 14);
 
+        // Set up each sectiopn
         VBox topSection = createStyledTextSection(Info.HOME_TEXT, TEXT_WRAP_WIDTH, welcomeFont, null);
-        VBox middleSection = createStyledTextSection("Public Gallery", TEXT_WRAP_WIDTH, galleryFont, blueColor);
+        topSection.setAlignment(Pos.CENTER);
 
+        VBox middleSection = createStyledTextSection("Public Gallery", TEXT_WRAP_WIDTH, galleryFont, blueColor);
         HBox imageBox = createImageGalleryBox(IMAGE_WIDTH, IMAGE_HEIGHT);
+        middleSection.getChildren().add(imageBox);
+        middleSection.setSpacing(30);
+        middleSection.setAlignment(Pos.CENTER);
+        middleSection.setPadding(new Insets(50, 0, 150, 0));
+
         Text bottomText = new Text("Yale School of Art\n1156 Chapel Street, POB 208339\nNew Haven, Connecticut, 06520-8339");
         bottomText.setWrappingWidth(TEXT_WRAP_WIDTH);
         VBox bottomSection = createStyledTextSection(bottomText.getText(), TEXT_WRAP_WIDTH, footnoteFont, blueColor);
-        middleSection.getChildren().add(imageBox);
-        middleSection.setSpacing(30);
+        bottomSection.setAlignment(Pos.CENTER);
 
         VBox vbox = new VBox(topSection, middleSection, bottomSection);
         vbox.setAlignment(Pos.CENTER);
-        vbox.setSpacing(100);
+        vbox.setSpacing(80);
         return vbox;
     }
 
@@ -76,6 +82,7 @@ public class HomePage {
         Text text = new Text(content);
         text.setWrappingWidth(wrapWidth);
         text.setTextAlignment(TextAlignment.CENTER);
+        text.setLineSpacing(5);
 
         // Apply styling
         if (font != null) {

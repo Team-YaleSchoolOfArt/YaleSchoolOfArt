@@ -1,5 +1,11 @@
+import HelperClasses.AboutUs;
+import HelperClasses.Apply;
+import HelperClasses.Contact;
 import HelperClasses.HomePage;
 import HelperClasses.Info;
+import HelperClasses.Login;
+import HelperClasses.News;
+import HelperClasses.Publication;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -21,11 +27,6 @@ public class Main extends Application {
 
         // Labels
         Label homeLabel = new Label("Yale School of Art");
-        Label aboutLabel = new Label("About the School");
-        Label applyLabel = new Label("Apply to the School");
-        Label newsLabel = new Label("News");
-        Label eventsLabel = new Label("Public Events");
-        Label publicationsLabel = new Label("Publications");
 
         // CSS for Labels
         homeLabel.setStyle("-fx-font-size: 30px;" + 
@@ -33,8 +34,6 @@ public class Main extends Application {
                            "-fx-text-fill: #00356B;");
 
         // Menu Bar Texts
-        Text addressText = new Text(Info.ADDRESS_TEXT);
-        addressText.setWrappingWidth(600);
         Text homeText = new Text(Info.HOME_TEXT);
         homeText.setWrappingWidth(600);
         Text aboutText = new Text(Info.ABOUT_TEXT);
@@ -43,10 +42,6 @@ public class Main extends Application {
         contactText.setWrappingWidth(600);
         Text applyText = new Text(Info.APPLY_TEXT);
         applyText.setWrappingWidth(600);
-        Text newsText = new Text(Info.NEWS_TEXT);
-        newsText.setWrappingWidth(600);
-        Text eventsText = new Text(Info.EVENTS_TEXT);
-        eventsText.setWrappingWidth(600);
         Text publicationsText = new Text(Info.PUBLICATIONS_TEXT);
         publicationsText.setWrappingWidth(600);
 
@@ -63,19 +58,18 @@ public class Main extends Application {
         menuBar.getMenus().addAll(homeMenu, aboutMenu, applyMenu, newsMenu, logInMenu);
 
         // About Menu
-        MenuItem historyMenu = new MenuItem("About Us");
+        MenuItem aboutUsMenu = new MenuItem("About Us");
         MenuItem contactMenu = new MenuItem("Contact");
-        aboutMenu.getItems().addAll(historyMenu, new SeparatorMenuItem(), contactMenu);
+        aboutMenu.getItems().addAll(aboutUsMenu, new SeparatorMenuItem(), contactMenu);
 
         // Apply Menu
         MenuItem graduateMenu = new MenuItem("Undergraduate Admission");
         applyMenu.getItems().addAll(graduateMenu);
 
         // News Menu
-        MenuItem newsTabMenu = new MenuItem("News");
-        MenuItem eventsMenu = new MenuItem("Events");
+        MenuItem latestNewsMenu = new MenuItem("Latest News");
         MenuItem publicationsMenu = new MenuItem("Publications");
-        newsMenu.getItems().addAll(newsTabMenu, eventsMenu, publicationsMenu);
+        newsMenu.getItems().addAll(latestNewsMenu, publicationsMenu);
 
         // Buttons and TextField for login
         Button submitButton = new Button("Submit");
@@ -138,16 +132,15 @@ public class Main extends Application {
 
         // Event handlers
         homeButtonLabel.setOnMouseClicked(mouseEvent -> loadContent(centerBox, new HomePage().getContent()));
-        historyMenu.setOnAction(e -> loadContent(centerBox, aboutLabel, aboutText));
-        contactMenu.setOnAction(e -> loadContent(centerBox, aboutLabel, contactText));
-        graduateMenu.setOnAction(e -> loadContent(centerBox, applyLabel, applyText));
-        newsTabMenu.setOnAction(e -> loadContent(centerBox, newsLabel, newsText));
-        eventsMenu.setOnAction(e -> loadContent(centerBox, eventsLabel, eventsText));
-        publicationsMenu.setOnAction(e -> loadContent(centerBox, publicationsLabel, publicationsText));
-        loginButtonLabel.setOnMouseClicked(mouseEvent -> loadContent(centerBox, loginBox));
+        aboutUsMenu.setOnAction(e -> loadContent(centerBox, AboutUs.getContent()));
+        contactMenu.setOnAction(e -> loadContent(centerBox, Contact.getContent()));
+        graduateMenu.setOnAction(e -> loadContent(centerBox, Apply.getContent(getHostServices())));
+        latestNewsMenu.setOnAction(e -> loadContent(centerBox, News.getContent(getHostServices())));
+        publicationsMenu.setOnAction(e -> loadContent(centerBox, Publication.getContent(getHostServices())));
+        loginButtonLabel.setOnMouseClicked(mouseEvent -> loadContent(centerBox, Login.getContent()));
 
         // Scene creation
-        Scene scene = new Scene(root, 1350, 900);
+        Scene scene = new Scene(root, 1400, 1200);
         primaryStage.setTitle("Yale School of Arts");
         primaryStage.setScene(scene);
         primaryStage.show();

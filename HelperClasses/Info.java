@@ -15,6 +15,11 @@ public class Info
 			+ "caliber. A full-time faculty of working artists in conjunction with a diverse cross-section of accomplished visiting artists "
 			+ "collaborate to design a program and foster an environment where the unique talents and perspectives of individual students can "
 			+ "emerge and flourish.";
+	public static final String ABOUT_TEXT_ONE = "The degree of Master of Fine Arts is the only degree offered by the School of Art. It is conferred by the University upon recommendation of the faculty after successful completion of all course work in residence and after a thesis presentation that has been approved by the faculty. It implies distinctive achievement on the part of students in studies in the professional area of their choice and demonstrated capacity for independent work. The minimum residence requirement is two years. All candidates’ work is reviewed by faculty at the end of each term.";
+
+	public static final String ABOUT_TEXT_TWO = "The School of Art’s galleries in Green Hall and EIK at 32 Edgewood Avenue provide a year-round forum for the exhibition of work by students, faculty, and special guests in the four graduate departments of the School and the undergraduate program. Green Gallery is open to the public when exhibitions are scheduled, but open hours vary by semester. EIK is open during limited hours for specific exhibitions and events. Please refer to the Gallery & Publications page for more information.";
+
+	public static final String CONTACT_TEXT_ONE = "YALE SCHOOL OF ART GRADUATE MFA ADMISSION\nart.admissions@yale.edu\n\n"+"NEWLY ADMITTED AND WAITLISTED STUDENTS\ntaryn.wolf@yale.edu\n\n"+"FINANCIAL AID\nnicole.archer@yale.edu\n\n"+"ALUMNI TRANSCRIPTS/EDUCATION VERIFICATIONS\nemily.cappa@yale.edu\n\n"+"UNDERGRADUATE ART MAJOR\nart.dus@yale.edu\n\n"+"YALE NORFOLK SUMMER SCHOOL OF ART\nnorfolkart@yale.edu\n\n"+"PUBLIC AFFAIRS/MEDIA INQUIRIES\nsarah.stevens-morling@yale.edu\n\n"+"DONATIONS AND GIFTS\nnicole.freeman@yale.edu\n\n"+"DIGITAL TECHNOLOGY OFFICE\nart.help@yale.edu\n\n"+"ALL OTHER INQUIRIES\nartschool.info@yale.edu";
 	
 	public static final String APPLY_TEXT = "Fall 2024 Application\r\n"
 			+ "\r\n"
@@ -31,16 +36,6 @@ public class Info
 			+ "Applicants SHOULD NOT CONTACT Yale School of Art faculty and/or current students seeking program information, application and/or portfolio advisement. Please respect the personal/private spaces (such as email, social media, direct message, etc.) and time of our community by utilizing the wiki and, when necessary, directing your inquiries appropriately to those whose job it is to assist you.\r\n"
 			+ "\r\n"
 			+ "Thank you";
-	
-	public static final String NEWS_TEXT = "OCTOBER 30, 2023\r\n"
-			+ "NEWS FROM NEW HAVEN: OCTOBER 2023\r\n"
-			+ "YALE COLLABORATION BRINGS HLENGIWE DUBE TO THE SCHOOL OF ART\r\n"
-			+ "EXPERIENCE THE 2ND-YEAR MFA EXHIBITION\r\n"
-			+ "DEI PROGRAMMING FOSTERS BROADER INCLUSIVITY & MORE";
-	
-	public static final String ADDRESS_TEXT = "Yale School of Art\r\n"
-			+ "1156 Chapel Street, POB 208339\r\n"
-			+ "New Haven, Connecticut, 06520-8339";
 	
 	public static final String CONTACT_TEXT = "YALE SCHOOL OF ART GRADUATE MFA ADMISSION art.admissions@yale.edu\r\n"
 			+ "\r\n"
@@ -73,10 +68,17 @@ public class Info
 			+ "REGISTRAR AND ADMISSIONS\r\n"
 			+ "203-432-2600";
 	
-	public static final String EVENTS_TEXT = "Welcome to the School of Art’s public events calendar, initiated in the summer of 2020. To stay updated on new events as they’re "
-			+ "confirmed, all members of the public are invited to subscribe this calendar to their own calendaring software by clicking the “Subscribe” button below.";
-	
-	public static final String PUBLICATIONS_TEXT = "This series of printed publications was initiated in 2017 and features the work of each recently graduated MFA class.\r\n"
-			+ "\r\n"
-			+ "Often distributed for free at public School of Art events, these publications are also made available through the Yale University Library System.";
+	public static final String PUBLICATIONS_TEXT = "This series of printed publications was initiated in 2017 and features the work of each recently graduated MFA class.";
+	public static final String PUBLICATIONS_TEXT_ONE = "Body of Work: Yale School of Art MFA 2020\n\nPublished 2021\n\nBody of Work showcases the collected work of the graduating MFA class of 2020, and marks the fourth installment of Yale School of Art’s all-school MFA book series. Featuring an afterword by Stavros Niarchos Foundation Dean and Professor of Art Marta Kuzma, and written contributions from Steven Rodriguez and Nicholas Weltyk, both Graphic Design ‘20; Carly Sheehan, Painting/Printmaking '20; Angela Chen, Photography '20; and David Roy, Sculpture '20.";
+	public static final String PUBLICATIONS_TEXT_TWO = "Body of Work: Yale School of Art MFA 2019\n\nPublished 2020\n\nFeaturing a foreword by Stavros Niarchos Foundation Dean and Professor of Art Marta Kuzma, and written contributions from Emma Gregoline, Graphic Design ‘19; Emile Mausner, Painting/Printmaking '19; Genesis Báez, Photography '19; and Alfredo Diaz, Sculpture '19; Body of Work showcases the collected work of the graduating MFA class of 2019, and marks the third installment of Yale School of Art’s all-school MFA book series.";
+
+	public static final String NEWS_TEXT = "Latest News";
+	public static final String NEWS_TEXT_ONE = "NEWS FROM NEW HAVEN: OCTOBER 2023\n\n" + //
+			"YALE COLLABORATION BRINGS HLENGIWE DUBE TO THE SCHOOL OF ART\r\n" + //
+			"EXPERIENCE THE 2ND-YEAR MFA EXHIBITION\r\n" + //
+			"DEI PROGRAMMING FOSTERS BROADER INCLUSIVITY & MORE";
+	public static final String NEWS_TEXT_TWO = "NEWS FROM NEW HAVEN: SEPTEMBER 2023\n\n" + //
+			"FALL 2023 CURRICULAR HAPPENINGS & HIGHLIGHTS\r\n" + //
+			"NEW FACULTY LECTURE SERIES BEGINS WITH CATHERINE OPIE\r\n" + //
+			"INAUGURAL CLIMATE ENGAGEMENT MURAL COMPLETE & MORE";
 }
