@@ -20,10 +20,10 @@ The primary objective of this project is to enhance the design of [Art at Yale](
 ### News Page
 ![Home Page](resources/README/5.png)
 ### Publications Page
-![Home Page](resources/README/6png)
+![Home Page](resources/README/6.png)
 ### Login Page
 ![Home Page](resources/README/7.png)
 ### Upload Page
 ![Home Page](resources/README/8.png)
-### Updated ome Page With User Upload
+### Updated Home Page With User Upload
 ![Home Page](resources/README/9.png)
